@@ -20,4 +20,4 @@ After a post is created in Blog application it will go to Producer which will th
 ---
 
 - [Producer (blog) source code](https://github.com/zulhfreelancer/rails_rabbitmq_producer)
-- [Consumer (dashboard) source code](https://github.com)
+- [Consumer (dashboard) source code](https://github.com/zulhfreelancer/rails_rabbitmq_consumer)
