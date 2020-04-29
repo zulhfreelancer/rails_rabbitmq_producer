@@ -8,16 +8,16 @@ Let's imagine two applications: a typical Blog application with posts and a Dash
 
 In the diagram above there is:
 
-    - Blog - a typical Rails app backed by SQL database
-    - P - RabbitMQ Producer
-    - X - RabbitMQ Exchange
-    - Queue - RabbitMQ Queue
-    - C - RabbitMQ Consumer
-    - Dashboard - Rails app backed by Redis
+- Blog - a typical Rails app backed by SQL database
+- P - RabbitMQ Producer
+- X - RabbitMQ Exchange
+- Queue - RabbitMQ Queue
+- C - RabbitMQ Consumer
+- Dashboard - Rails app backed by Redis
 
 After a post is created in Blog application it will go to Producer which will then send a message to Exchange. Exchange will put the message into a Queue. Then the Consumer, connected to this Queue, will grab the message and update Dashboard's Redis-based cache.
 
 ---
 
-- [Producer (blog) source code](https://github.com)
+- [Producer (blog) source code](https://github.com/zulhfreelancer/rails_rabbitmq_producer)
 - [Consumer (dashboard) source code](https://github.com)
